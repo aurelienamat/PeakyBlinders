@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+            const myCarouselElement = document.querySelector('#myCarousel')
+
+            const carousel = new bootstrap.Carousel(myCarouselElement, {
+                interval: 2000,
+                touch: false
+            })
+        </script>
+    <!-- HEADER -->
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">HOME</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">PRICING</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CV</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="BLUE">CONTACT</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li>
+        </ul>
+    </header>
+    <!-- CARROUSSEL -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="first-image">
+                <!-- <img src="images/old-peaky-width.jpg" class="d-block w-100" alt="..."> -->
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Thomas Shelby</h5>
+                    <p>A Story about Thomas Shelby's family</p>
+                </div> -->
+            </div>
+            <div class="carousel-item" id="second-image">
+                <!-- <img src="images/new-peaky-width.webp" class="d-block w-100" alt="..."> -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" id="third-image">
+                <!-- <img src="images/Peaky-Width.jpg" class="d-block w-100" alt="..."> -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- CARTES -->
+    <div class="container py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Custom cards</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" id="col-parent">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('images/Shelby.webp');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg> <small>Earth</small> </li>
+                            <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Duration">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg> <small>3d</small> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('images/walkShelby.avif');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg> <small>Pakistan</small> </li>
+                            <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Duration">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg> <small>4d</small> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('images/Tommy.webp');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <!-- <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3> -->
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Location">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg> <small>California</small> </li>
+                            <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em"
+                                    role="img" aria-label="Duration">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg> <small>5d</small> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--                                                  PRICE                                            -->
+    <div class="box-price">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="display-4 " id="plan">CHOOSE YOUR PLAN</h2>
+                    <p class="text-muted">Select the perfect plan for your needs</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Basic Plan -->
+                <div class="col">
+                    <div class="card h-100 pricing-card shadow-sm">
+                        <div class="card-body p-5">
+                            <h5 class="card-title text-uppercase mb-4">Starter</h5>
+                            <h1 class="display-5 mb-4">$19<small class="text-muted fw-light">/mo</small></h1>
+                            <ul class="list-unstyled feature-list">
+                                <li><i class="bi bi-check2 text-primary me-2"></i>5 Projects</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>10GB Storage</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Basic Support</li>
+                            </ul>
+                            <button class="btn button btn-lg w-100 mt-4">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="col">
+                    <div class="card h-100 pricing-card shadow position-relative">
+                        <span class="badge gradient-custom text-white popular-badge px-4 py-2">Popular</span>
+                        <div class="card-body p-5">
+                            <h5 class="card-title text-uppercase mb-4">Professional</h5>
+                            <h1 class="display-5 mb-4">$49<small class="text-muted fw-light">/mo</small></h1>
+                            <ul class="list-unstyled feature-list">
+                                <li><i class="bi bi-check2 text-primary me-2"></i>15 Projects</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>50GB Storage</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Priority Support</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Advanced Features</li>
+                            </ul>
+                            <button class="btn btn-color btn-lg w-100 mt-4">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="col">
+                    <div class="card h-100 pricing-card shadow-sm">
+                        <div class="card-body p-5">
+                            <h5 class="card-title text-uppercase mb-4">Enterprise</h5>
+                            <h1 class="display-5 mb-4">$99<small class="text-muted fw-light">/mo</small></h1>
+                            <ul class="list-unstyled feature-list">
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Unlimited Projects</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>1TB Storage</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>24/7 Support</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Custom Features</li>
+                            </ul>
+                            <button class="btn button btn-lg w-100 mt-4">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AUTRE ENCORE -->
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Hanging icons</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                        <use xlink:href="#toggles2"></use>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p> <a href="#"
+                        class="btn btn-color">
+                        Primary button
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                        <use xlink:href="#cpu-fill"></use>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p> <a href="#"
+                        class="btn btn-color">
+                        Primary button
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                        <use xlink:href="#tools"></use>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p> <a href="#"
+                        class="btn btn-color">
+                        Primary button
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--              FORM        -->
+    <form action="">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Votre Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+            <label class="form-check-label" for="switchCheckDefault">Je suis un noobar</label>
+        </div>
+        <button type="submit" class="btn btn-color">Submit</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Peaky';
+}
+@font-face {
+        font-family: 'Peaky';
+        src: url(ClashDisplay-Variable.ttf);
+    }
+
+body{
+    width: 100%;
+}
+/* HEADER */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(255, 255, 255,0.5);
+    width: 100%;
+}
+.active{
+    background-color: rgb(69, 69, 69) !important;
+}
+
+.nav-item{
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.nav-link{
+    color: rgb(69, 69, 69);
+}
+/* CAROUSEL */
+img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#first-image{
+    background-image: url("images/4k-sky.png");
+    background-position: bottom;
+    background-size: cover;
+}
+#second-image{
+    background-image: url("images/4k-solo.jpg");
+    background-position: top;
+    background-size: cover;
+}
+#third-image{
+    background-image: url("images/4k-savane.jpg");
+    background-position: top;
+    background-size: cover;
+}
+.carousel-item{
+    min-height: 90vh;
+}
+/*          Card      */
+#custom-cards{
+    margin: 0 ;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+}
+#col-parent{
+    margin: 0 ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-size: cover;
+    min-height: 33vh;
+}
+
+/*              PRICE                */
+#plan{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+}
+.box-price{
+    background-image: url("images/cielgris.jfif");
+    background-position: top;
+    background-size: cover;
+}
+.text-muted{
+    color: white !important;
+    letter-spacing: 0.33rem;
+    font-weight: 100;
+}
+.button{
+    color: rgb(69, 69, 69) ;
+    border: 2px solid rgb(69, 69, 69) ;
+}
+.button:hover{
+    color: white ;
+    border: 2px solid white;
+    background-color: rgb(69, 69, 69);
+}
+/* Animation price  */
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-list li {
+    margin-bottom: 0.8rem;
+    color: #6c757d;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    border-radius: 20px;
+}
+
+h5{
+    color: rgb(69, 69, 69);
+}
+
+/*              AUTRE         */
+.btn-color{
+    background-color: rgb(69, 69, 69);
+    color: white !important;
+    border: 2px solid rgb(69, 69, 69);
+}
+.btn-color:hover{
+    background-color: white;
+    color: rgb(69, 69, 69) !important;
+}
+
+
+/*          FORMULAIRE           */
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form > div{
+    min-width: 50%;
+}
+
+/*                              MEDIA QUERY                                       */
