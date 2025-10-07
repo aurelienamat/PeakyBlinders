@@ -16,22 +16,28 @@ header{
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: rgb(255, 255, 255,0.5);
+    background-color: rgb(255, 255, 255,0.618);
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .active{
     background-color: rgb(69, 69, 69) !important;
 }
-
+#lang{
+    width: 5vw;
+}
 .nav-item{
-    width: 15vw;
+    width: 17.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
 }
 .nav-link{
     color: rgb(69, 69, 69);
+    font-size: 1.2rem;
 }
 /* CAROUSEL */
 img{
@@ -64,8 +70,8 @@ img{
     padding-right: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 80vw;
+    max-width: 90%;
+    margin: auto;
 }
 #col-parent{
     margin: 0 ;
@@ -73,6 +79,9 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#col-parent .col{
+    min-height: 50vh;
 }
 .card{
     background-size: cover;
@@ -84,6 +93,13 @@ img{
     color: white;
     font-weight: 500;
     letter-spacing: 0.4rem;
+}
+#col-parent-price{
+    margin: 0 ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .box-price{
     background-image: url("images/cielgris.jfif");
@@ -126,6 +142,7 @@ img{
     top: -12px;
     right: 20px;
     border-radius: 20px;
+    background-color: rgb(69, 69, 69) ;
 }
 
 h5{
@@ -133,6 +150,11 @@ h5{
 }
 
 /*              AUTRE         */
+#hanging-icons{
+    max-width: 90%;
+    width: auto;
+    margin: auto;
+}
 .btn-color{
     background-color: rgb(69, 69, 69);
     color: white !important;
@@ -145,15 +167,76 @@ h5{
 
 
 /*          FORMULAIRE           */
-form{
+#info-contact{
+    background-color: rgb(69, 69, 69);
+    color: white;
+}
+/* #box-formulaire{
     width: 100%;
+    background-color: rgb(69, 69, 69,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 3rem 0;
+    height: 76vh;
+}
+#image-form{
+    width: 20%;
+    height: 80%;
+    background-color: rgb(69, 69, 69);
+    border-radius: 10px 0 0 10px;
+}
+form{
+    width: auto;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-form > div{
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 1rem;
+} */
+/* form > div{
     min-width: 50%;
+} */
+
+/*          FOOTER                */
+#footer{
+    margin-top: 5vh;
+}
+
+/*              AUTRE   global              */
+a{
+    text-decoration: none;
 }
 
 /*                              MEDIA QUERY                                       */
+@media (max-width : 992px) {
+    #col-parent .col{
+        max-width: 80%;
+        min-height: 61.8vh;
+    }
+    .nav-link{
+        font-size: 0.8rem;
+    }
+    #col-parent-price{
+        flex-direction: column;
+    }
+    #col-parent-price .col{
+        width: 80%;
+    }
+}
+@media (max-width : 768px) {
+    #col-parent .col{
+        max-width: 100%;
+    }
+    .nav-link{
+        font-size: 2.5vw;
+    }
+    form{
+        width: 80%;
+        font-size: 2rem;
+    }
+}
