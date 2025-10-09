@@ -1,5 +1,4 @@
-<h1>Projet réalisé dans le cadre d'un TP de BTSCIEL1</h1>
-<h2>La Providence Amiens, promo 2025-2026.</h2>
+<h1>Projet réalisé dans le cadre d'un TP de BTSCIEL1<br>La Providence Amiens, promo 2025-2026.</h1>
 
 <h2>Objectif pédagogique : </h2>
 <h3>- C04.1 R1 T1 :</h3> <p>Extraire les spécifications du cahier des charges</p>
@@ -7,7 +6,7 @@
 
 <h2>Cahier des charges : </h2>
 <img width="656" height="493" alt="cahier_des_charges_tp3_css_BTSCIEL1" src="https://github.com/user-attachments/assets/6f5b3034-0fd3-41f6-bd90-d4fe0e3e9383" />
-
+<img width="869" height="547" alt="cahier_des_charges_tp3_css" src="https://github.com/user-attachments/assets/4ff1af97-e581-4bcd-be4e-ff14ddd44198" />
 
 <h2>📧 Contact</h2>
 <h3>Nom :</h3> <p>AMAT Aurélien</p>
