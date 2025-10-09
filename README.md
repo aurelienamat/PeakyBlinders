@@ -1,4 +1,5 @@
-<h1>Projet réalisé dans le cadre d'un TP de BTSCIEL1 à La Providence Amiens, promo 2025-2026.</h1>
+<h1>Projet réalisé dans le cadre d'un TP de BTSCIEL1</h1>
+<h2>La Providence Amiens, promo 2025-2026.</h2>
 
 <h2>Objectif pédagogique : </h2>
 <h3>- C04.1 R1 T1 :</h3> <p>Extraire les spécifications du cahier des charges</p>
