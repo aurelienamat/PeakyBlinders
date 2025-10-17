@@ -1,0 +1,10 @@
+A Faire :
+Ajout de plusieurs page
+    page pour stratège...ect
+    page pour plus d'info sur ce que contient le prix
+    page pour parler du voyage
+
+En Cours : 
+Bouton retour pour revenir au site principal
+
+Fait :
