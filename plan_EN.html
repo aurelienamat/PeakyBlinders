@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeakyBlindersFamily</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+            const myCarouselElement = document.querySelector('#myCarousel')
+
+            const carousel = new bootstrap.Carousel(myCarouselElement, {
+                interval: 2000,
+                touch: false
+            })
+        </script>
+    <!-- HEADER -->
+    <header class="d-flex py-3">
+        <a href="plan_FR.html" id="lang" class="nav-link">fr</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="indexen.html" class="nav-link active" aria-current="page">HOME</a></li>
+            <li class="nav-item"><a href="indexen.html#hanging-icons" class="nav-link">ABOUT</a></li>
+            <li class="nav-item"><a href="#price" class="nav-link">PRICING</a></li>
+            <li class="nav-item"><a href="contact_EN.html" class="nav-link" id="BLUE">CONTACT</a></li>
+            <li class="nav-item"><a href="CV/CV_EN.html" class="nav-link">CV</a></li>
+        </ul>
+    </header>
+
+    <!--                                                  PRICE                                            -->
+    <div class="box-price" id="price">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="display-4 " id="plan">CHOOSE YOUR PLAN</h2>
+                    <p class="text-muted">Join the family</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="col-parent-price">
+                <!-- Basic Plan -->
+                <div class="col">
+                    <div class="card h-100 pricing-card shadow-sm">
+                        <div class="card-body p-5">
+                            <h5 class="card-title text-uppercase mb-4">JONH</h5>
+                            <h1 class="display-5 mb-4">0$</h1>
+                            <ul class="list-unstyled feature-list">
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Access to weekly articles</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Episode analyses (with a two-week delay)</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Monthly newsletter</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Fan community</li>
+                            </ul>
+                            <button class="btn button btn-lg w-100 mt-4">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="col">
+                    <div class="card h-100 pricing-card shadow position-relative">
+                        <span class="badge gradient-custom text-white popular-badge px-4 py-2">Popular</span>
+                        <div class="card-body p-5">
+                            <h5 class="card-title text-uppercase mb-4">ARTHUR</h5>
+                            <h1 class="display-5 mb-4">9.99$</h1>
+                            <ul class="list-unstyled feature-list">
+                                <li><i class="bi bi-check2 text-primary me-2"></i>All the Blinder Plan</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Immediate access to all articles
+                                </li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Exclusive content and interviews</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Detailed character analyses
+                                </li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Complete archive since 2019</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Monthly podcast "The Secrets of Small
+Heath"</li>
+                            </ul>
+                            <button class="btn btn-color btn-lg w-100 mt-4">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="col">
+                    <div class="card h-100 pricing-card shadow-sm">
+                        <div class="card-body p-5">
+                            <h5 class="card-title text-uppercase mb-4">THE SHELBY</h5>
+                            <h1 class="display-5 mb-4">19.99$</h1>
+                            <ul class="list-unstyled feature-list">
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Everything about the Peaky plan</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Live Q&A sessions with the team
+                                </li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Premium content: scripts, storyboards
+                                </li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Early access to new content
+                                </li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>VIP badge in the community</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Exclusive quarterly goodies</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>24/7 Support</li>
+                            </ul>
+                            <button class="btn button btn-lg w-100 mt-4">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="container" id="footer">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-top pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">HOME</a></li>
+                <li class="nav-item"><a href="#price" class="nav-link">PRICING</a></li>
+                <li class="nav-item"><a href="#hanging-icons" class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="#contact-form" class="nav-link" id="BLUE">CONTACT</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">CV</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2025 Chiquette Indistrie, AMAT Aurélien</p>
+        </footer>
+    </div>
+</body>
+
+</html>
