@@ -87,6 +87,9 @@ img{
     background-size: cover;
     min-height: 33vh;
 }
+.card-cover{
+    cursor: pointer;
+}
 
 /*              PRICE                */
 #plan{
