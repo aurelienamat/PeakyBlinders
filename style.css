@@ -91,7 +91,7 @@ img{
 .carousel-item{
     min-height: 90vh;
 }
-/*          Card      */
+/*          Card                 */
 #custom-cards{
     margin: 0 ;
     padding-left: 0;
@@ -115,11 +115,21 @@ img{
     background-size: cover;
     min-height: 33vh;
 }
-.card-cover{
+.hover-animation{
     cursor: pointer;
+    transition: transform 0.2s ease;
 }
-.card-cover:hover{
-    scale: 1.02;
+.hover-animation:hover{
+    transform: scale(1.05);
+}
+
+@keyframes chargement {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.05;
+    }
 }
 
 /*              PRICE                */
@@ -205,36 +215,12 @@ h5{
     background-color: rgb(69, 69, 69);
     color: white;
 }
-/* #box-formulaire{
-    width: 100%;
-    background-color: rgb(69, 69, 69,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 3rem 0;
-    height: 76vh;
-}
-#image-form{
-    width: 20%;
-    height: 80%;
-    background-color: rgb(69, 69, 69);
-    border-radius: 10px 0 0 10px;
-}
-form{
-    width: auto;
-    height: 80%;
+.contact-wrap{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: white;
-    border-radius: 0 10px 10px 0;
-    padding: 1rem;
-} */
-/* form > div{
-    min-width: 50%;
-} */
+    justify-content: center;
+}
 
 /*          FOOTER                */
 #footer{
