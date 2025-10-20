@@ -11,11 +11,39 @@
 body{
     width: 100%;
 }
+/* CONTAINER POUR LE CHARGEMENT DU SITE */
+.container-chargement{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cercle-chargement{
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    border: solid transparent .25vw;
+    border-radius: 50%;
+    border-top-color: white;
+    animation: chargement 1s linear infinite;
+}
+@keyframes chargement {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 /* HEADER */
 header{
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 998;
     background-color: rgb(255, 255, 255,0.618);
     width: 100%;
     display: flex;
@@ -89,6 +117,9 @@ img{
 }
 .card-cover{
     cursor: pointer;
+}
+.card-cover:hover{
+    scale: 1.02;
 }
 
 /*              PRICE                */
