@@ -1,18 +1,20 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Peaky';
 }
-@font-face {
-        font-family: 'Peaky';
-        src: url(ClashDisplay-Variable.ttf);
-    }
 
-body{
+@font-face {
+    font-family: 'Peaky';
+    src: url(ClashDisplay-Variable.ttf);
+}
+
+body {
     width: 100%;
 }
+
 /* CONTAINER POUR LE CHARGEMENT DU SITE */
-.container-chargement{
+.container-chargement {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -22,7 +24,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.cercle-chargement{
+
+.cercle-chargement {
     position: absolute;
     width: 10vh;
     height: 10vh;
@@ -31,69 +34,82 @@ body{
     border-top-color: white;
     animation: chargement 1s linear infinite;
 }
+
 @keyframes chargement {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
+
 /* HEADER */
-header{
+header {
     position: sticky;
     top: 0;
     z-index: 998;
-    background-color: rgb(255, 255, 255,0.618);
+    background-color: rgb(255, 255, 255, 0.618);
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.active{
+
+.active {
     background-color: rgb(69, 69, 69) !important;
 }
-#lang{
+
+#lang {
     width: 5vw;
 }
-.nav-item{
+
+.nav-item {
     width: 17.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-link{
+
+.nav-link {
     color: rgb(69, 69, 69);
     font-size: 1.2rem;
 }
+
 /* CAROUSEL */
-img{
+img {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
-#first-image{
+
+#first-image {
     background-image: url("images/4k-sky.png");
     background-position: bottom;
     background-size: cover;
 }
-#second-image{
+
+#second-image {
     background-image: url("images/4k-solo.jpg");
     background-position: top;
     background-size: cover;
 }
-#third-image{
+
+#third-image {
     background-image: url("images/4k-savane.jpg");
     background-position: top;
     background-size: cover;
 }
-.carousel-item{
+
+.carousel-item {
     min-height: 90vh;
 }
+
 /*          Card                 */
-#custom-cards{
-    margin: 0 ;
+#custom-cards {
+    margin: 0;
     padding-left: 0;
     padding-right: 0;
     display: flex;
@@ -101,69 +117,113 @@ img{
     max-width: 90%;
     margin: auto;
 }
-#col-parent{
-    margin: 0 ;
+
+#col-parent {
+    margin: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#col-parent .col{
+
+#col-parent .col {
     min-height: 50vh;
 }
-.card{
+
+.card {
     background-size: cover;
     min-height: 33vh;
+    background-position: center top;
 }
-.hover-animation{
+
+.hover-animation {
     cursor: pointer;
     transition: transform 0.2s ease;
 }
-.hover-animation:hover{
+
+.hover-animation:hover {
     transform: scale(1.05);
 }
 
-@keyframes chargement {
-    0%{
-        scale: 1;
-    }
-    100%{
-        scale: 1.05;
-    }
+/* Section page stratege  */
+.true-active {
+    width: 40vw;
 }
 
+.non-active {
+    width: 20vw;
+}
+
+#explication {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#explication>section {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#explication>section>.contenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenu>p {
+    min-width: 40%;
+    max-width: 600px;
+}
+
+span{
+    font-weight: 550;
+}
 /*              PRICE                */
-#plan{
+#plan {
     color: white;
     font-weight: 500;
     letter-spacing: 0.4rem;
 }
-#col-parent-price{
-    margin: 0 ;
+
+#col-parent-price {
+    margin: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.box-price{
+
+.box-price {
     background-image: url("images/cielgris.jfif");
     background-position: top;
     background-size: cover;
 }
-.text-muted{
+
+.text-muted {
     color: white !important;
     letter-spacing: 0.33rem;
     font-weight: 100;
 }
-.button{
-    color: rgb(69, 69, 69) ;
-    border: 2px solid rgb(69, 69, 69) ;
+
+.button {
+    color: rgb(69, 69, 69);
+    border: 2px solid rgb(69, 69, 69);
 }
-.button:hover{
-    color: white ;
+
+.button:hover {
+    color: white;
     border: 2px solid white;
     background-color: rgb(69, 69, 69);
 }
+
 /* Animation price  */
 .pricing-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -186,36 +246,39 @@ img{
     top: -12px;
     right: 20px;
     border-radius: 20px;
-    background-color: rgb(69, 69, 69) ;
+    background-color: rgb(69, 69, 69);
 }
 
-h5{
+h5 {
     color: rgb(69, 69, 69);
 }
 
 /*              AUTRE         */
-#hanging-icons{
+#hanging-icons {
     max-width: 90%;
     width: auto;
     margin: auto;
 }
-.btn-color{
+
+.btn-color {
     background-color: rgb(69, 69, 69);
     color: white !important;
     border: 2px solid rgb(69, 69, 69);
 }
-.btn-color:hover{
+
+.btn-color:hover {
     background-color: white;
     color: rgb(69, 69, 69) !important;
 }
 
 
 /*          FORMULAIRE           */
-#info-contact{
+#info-contact {
     background-color: rgb(69, 69, 69);
     color: white;
 }
-.contact-wrap{
+
+.contact-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,40 +286,66 @@ h5{
 }
 
 /*          FOOTER                */
-#footer{
+#footer {
     margin-top: 5vh;
 }
 
 /*              AUTRE   global              */
-a{
+a {
     text-decoration: none;
 }
 
 /*                              MEDIA QUERY                                       */
 @media (max-width : 992px) {
-    #col-parent .col{
+    #col-parent .col {
         max-width: 80%;
         min-height: 61.8vh;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 0.8rem;
     }
-    #col-parent-price{
+
+    #col-parent-price {
         flex-direction: column;
     }
-    #col-parent-price .col{
+
+    #col-parent-price .col {
         width: 80%;
+    }
+
+    .non-active {
+        display: none;
+    }
+
+    .true-active {
+        width: 80%;
+    }
+
+    .contenu>p {
+        width: 100%;
     }
 }
+
 @media (max-width : 768px) {
-    #col-parent .col{
+    #col-parent .col {
         max-width: 100%;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 2.5vw;
     }
-    form{
+
+    form {
         width: 80%;
         font-size: 2rem;
+    }
+
+    .non-active {
+        display: none;
+    }
+
+    .true-active {
+        width: 100%;
     }
 }
