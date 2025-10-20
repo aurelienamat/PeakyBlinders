@@ -135,6 +135,9 @@ img {
     min-height: 33vh;
     background-position: center top;
 }
+.phone-card{
+    display: none;
+}
 
 .hover-animation {
     cursor: pointer;
@@ -301,7 +304,6 @@ a {
         max-width: 80%;
         min-height: 61.8vh;
     }
-
     .nav-link {
         font-size: 0.8rem;
     }
@@ -315,15 +317,40 @@ a {
     }
 
     .non-active {
-        display: none;
+        display: none !important;
     }
 
     .true-active {
         width: 80%;
+        padding: 0 !important;
     }
 
     .contenu>p {
         width: 100%;
+    }
+
+    .phone-card{
+        width: 80%;
+        height: 5vh;
+        background-image: url("images/cielgris.jfif");
+        border-radius: 0.25rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .phone-card > a{
+        width: 100%;
+        height: 100%;
+    }
+    .phone-card > a > ul{
+        color: white;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 }
 
