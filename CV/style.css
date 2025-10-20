@@ -17,6 +17,54 @@ body{
     display: flex;
     flex-direction: column;
 }
+/* CONTAINER POUR LE CHARGEMENT DU SITE */
+.container-chargement{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cercle-chargement{
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    border: solid transparent .25vw;
+    border-radius: 50%;
+    border-top-color: white;
+    animation: chargement 1s linear infinite;
+}
+@keyframes chargement {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* BOUTON RETOUR  */
+#retour{
+    z-index: 1000;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 10%;
+    position: fixed;
+    left: 1vw;
+    top: 0.7vh;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#retour > a{
+    color: white;
+}
+
+
 #box1{
     width: 100vw;
     height: 100%;
