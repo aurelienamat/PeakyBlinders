@@ -293,6 +293,18 @@ span{
     #box-hobbit{
         width: 90%;
     }
+    p{
+    font-size: 1.8rem;
+    }
+    h1{
+    font-size: clamp(1.8rem, calc(7vw + 1rem), 5rem);
+    }   
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
 
 }
 
@@ -303,5 +315,23 @@ span{
         align-items: center;
         justify-content: center;
     }    
+    #retour{
+        display: none;
+    }
+    header{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    h1{
+        font-size: clamp(2rem, calc(7vw + 1rem), 5rem);
+    }   
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
 
 }
