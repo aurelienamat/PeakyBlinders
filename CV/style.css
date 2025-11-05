@@ -58,7 +58,6 @@ body{
     cursor: pointer;
     display: flex;
     justify-content: center;
-    /* padding-left: 0.5vh; */
     align-items: center;
 }
 #retour > a{
