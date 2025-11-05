@@ -48,22 +48,27 @@ body{
 /* BOUTON RETOUR  */
 #retour{
     z-index: 1000;
-    width: 5vh;
+    width: 2vh;
     height: 5vh;
-    border-radius: 10%;
+    border-radius: 0% 10% 10% 0%;
     position: fixed;
-    left: 1vw;
-    top: 0.7vh;
+    left: 0;
+    top: 7vh;
     background-color: black;
     cursor: pointer;
     display: flex;
     justify-content: center;
+    /* padding-left: 0.5vh; */
     align-items: center;
 }
 #retour > a{
     color: white;
+    transition: transform 0.2s ease;
 }
 
+#retour:hover {
+    width: 6vh;
+}
 
 #box1{
     width: 100vw;
@@ -315,9 +320,6 @@ span{
         align-items: center;
         justify-content: center;
     }    
-    #retour{
-        display: none;
-    }
     header{
         font-size: 0.8rem;
     }
