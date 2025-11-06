@@ -310,10 +310,11 @@ a {
 
     #col-parent-price {
         flex-direction: column;
+        width: 100%;
     }
 
     #col-parent-price .col {
-        width: 80%;
+        width: 90%;
     }
 
     .non-active {
@@ -357,6 +358,9 @@ a {
 @media (max-width : 768px) {
     #col-parent .col {
         max-width: 100%;
+    }
+    #col-parent-price .col {
+        width: 100%;
     }
 
     .nav-link {
