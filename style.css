@@ -14,7 +14,7 @@ body {
 }
 
 /* CONTAINER POUR LE CHARGEMENT DU SITE */
-.container-chargement {
+#container-chargement {
     position: fixed;
     width: 100vw;
     height: 100vh;
